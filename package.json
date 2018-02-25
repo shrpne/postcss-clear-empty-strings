@@ -1,0 +1,39 @@
+{
+  "name": "postcss-clear-empty-strings",
+  "version": "1.0.0",
+  "description": "PostCSS plugin remove declaration with empty values",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "clear-empty"
+  ],
+  "author": "shrpne <shrpne@gmail.com>",
+  "license": "MIT",
+  "repository": "shrpne/postcss-clear-empty-strings",
+  "bugs": {
+    "url": "https://github.com/shrpne/postcss-clear-empty-strings/issues"
+  },
+  "homepage": "https://github.com/shrpne/postcss-clear-empty-strings",
+  "dependencies": {
+    "postcss": "^6.0.16"
+  },
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-postcss": "^2.0.2",
+    "jest": "^21.0.0"
+  },
+  "scripts": {
+    "test": "jest && eslint *.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es5",
+    "rules": {
+      "indent": ["error", 4, { "SwitchCase": 1 }],
+      "max-len": ["off"]
+    },
+    "env": {
+      "jest": true
+    }
+  }
+}
